@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Custom CSS for the 'Contact Me' Section -->
+    <style>
+        /* Custom Styles for Sticky Navbar */
+        body {
+            scroll-behavior: smooth; /* Smooth scrolling for all anchor links */
+        }
+        #navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+            z-index: 999; /* Ensure the navbar is above all other elements */
+        }
+        .navbar-nav .nav-link {
+            margin-right: 20px; /* Space between links */
+            transition: color 0.3s ease; /* Smooth transition on hover */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ff69b4; /* Change link color on hover to match theme */
+        }
+        .navbar-nav .active {
+            font-weight: bold; /* Highlight the active link */
+            color: #ff69b4 !important; /* Use pink color for active link */
+        }
+
+        /* Custom Styles for the 'Contact Me' Section */
+        #contact {
+            background-color: #333; /* Dark background */
+            color: #fff; /* White text for high contrast */
+        }
+        .btn-pink {
+            background-color: #ff69b4; /* Pink background color */
+            color: #fff; /* White color for the icon */
+            width: 50px; /* Set a fixed width for circular buttons */
+            height: 50px;
+            line-height: 45px; /* Center text vertically */
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%; /* Circular shape */
+            transition: all 0.3s ease; /* Smooth hover effect */
+        }
+        .btn-pink:hover {
+            background-color: #ff1493; /* Darker pink on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Stuti's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#contact">Contact</a>
+          </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom Styles for the 'About' Section */
+      #about {
+        padding: 50px 0;
+      }
+      .about-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .about-image {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 5px solid #0d0e0f; /* Solid border for the avatar */
+      }
+      .about-text {
+        max-width: 600px; /* Comfortable reading width */
+        margin: 20px auto; /* Center the paragraphs */
+        text-align: center;
+      }
+
+      /* Custom Styles for the 'Projects' Section */
+      #projects {
+        padding: 50px 0;
+      }
+      .project-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .card {
+        margin-bottom: 30px; /* Space between cards */
+      }
+
+      /* Custom Styles for the 'Skills' section */
+      #skills{
+        padding: 50px 0;
+
+      }
+      .skills-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+      }
+      .skill-card {
+        text-align: center;
+        margin-bottom: 20px; /* Space between skill cards */
+      }
+      .skill-icon {
+        width: 100px; /* Set a fixed width for the icons */
+        height: 100px;
+        display: block;
+        margin: 0 auto 15px auto; */ Centre the icon */
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- About Section -->
+    <section id="about" class="container">
+      <h2 class="about-title">About</h2>
+
+      <!-- Image Placeholder -->
+      <img
+        src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/about/2.png"
+        alt="About Me"
+        class="about-image img-fluid"
+        style="width: 200px; height: 200px"
+      />
+
+      <!-- Text Content -->
+      <div class="about-text">
+        <p>
+            Hello! I am Stuti Gaonkar,an Electronics Engineer with a strong passion for data science and problem solving. My journey has led me to explore the fascinating intersection of technology and creativity, where I leverage data to tackle real world challenges. Alongside my technical pursuits, I'm a dedicated yoga practitioner, Indian classical dancer and a fashion afficionado. I constantly seek inspiration from both art and nature. 
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+      <h2 class="project-title">Projects</h2>
+
+      <!-- Bootstrap Card Deck -->
+      <div class="row">
+        <!-- Project 1 Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/projects/1.png"
+              class="card-img-top"
+              alt="Project 1"
+            />
+            <div class="card-body">
+              
+              <p class="card-text">
+                An IoT and computer vision based system that segregates waste as recyclable and nonrecyclable.  
+              </p>
+              <a href="https://github.com/StutiiiG/Waste-Manager" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/projects/2.png"
+              class="card-img-top"
+              alt="Project 2"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                A mutilingual web app that provides access to various governmental health schemes and insurances for the underpriviledged 
+              </p>
+              <a href="https://github.com/StutiiiG/Health-Insurance" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/projects/6.png"
+              class="card-img-top"
+              alt="Project 3"
+            />
+            <div class="card-body">
+              
+              <p class="card-text">
+                A linear regression model predicts the price of flats in Mumbai based on location, carpet area, amenities, etc.
+              </p>
+              <a href="https://github.com/StutiiiG/Real-Estate-price-prediction" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 Card -->
+        <div class="col-md-4">
+            <div class="card">
+              <img
+                src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/projects/3.png"
+                class="card-img-top"
+                alt="Project 4"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Leveraged a SVM Classifier to predict if an individual is diabetic based on various health parameters. 
+                </p>
+                <a href="https://github.com/StutiiiG/Diabetes-Prediction" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- SKills Section -->
+     <section id="skills" class="container">
+        <h2 class="skills title">Skills</h2>
+
+        <div class="row">
+            <!-- Skill 1 -->
+            <div class="col-md-3">
+                <div class="card skill-card">
+                    <img src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/skills/1.png" alt="Python" class="skill-icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 2 -->
+        <div class="col-md-3">
+            <div class="card skill-card">
+                <img src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/skills/6.png" alt="Data Visualization" class="skill-icon">
+                <div class="card-body">
+                    <h5 class="card-title">Data Visualization</h5>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="col-md-3">
+            <div class="card skill-card">
+                <img src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/skills/9.png" alt="SQL" class="skill-icon">
+                <div class="card-body">
+                    <h5 class="card-title">OpenCV</h5>
+                
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="col-md-3">
+            <div class="card skill-card">
+                <img src="C:/Users/stuti/Desktop/Stuti/My Portfolio/images/skills/7.png" alt="Data Storytelling" class="skill-icon">
+                <div class="card-body">
+                    <h5 class="card-title">Tensorflow</h5>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="text-light" style="background-color: #333; padding: 50px 0;">
+<div class="container">
+    <!-- Section Title -->
+    <h2 class="text-center mb-4">Contact Me</h2>
+    
+    <!-- Contact Information Row -->
+    <div class="row justify-content-center mb-4">
+        <!-- Email -->
+        <div class="col-md-4 text-center">
+            <i class="bi bi-envelope" style="font-size: 2rem;"></i> <!-- Bootstrap email icon -->
+            <p class="mt-2">stutiii24@gmail.com</p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="col-md-4 text-center">
+            <i class="bi bi-telephone" style="font-size: 2rem;"></i> <!-- Bootstrap phone icon -->
+            <p class="mt-2">+91 9757437202</p>
+        </div>
+    </div>
+
+    <!-- Social Media Icons Row -->
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <!-- Social Media Links -->
+            <a href="https://www.linkedin.com/in/stuti-gaonkar-484898210" class="btn btn-lg btn-pink rounded-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                <img src="C:/Users/stuti/Desktop/Stuti/My Portfolio/icons/linkedin.png" alt="LinkedIn" style="width: 30px;">
+            </a>
+            <a href="https://github.com/StutiiiG?tab=repositories" class="btn btn-lg btn-pink rounded-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                <img src="C:/Users/stuti/Desktop/Stuti/My Portfolio/icons/github.png" alt="GitHub" style="width: 30px;">
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Bootstrap and Tooltip Initialization Script -->
+<script>
+// Initialize tooltips
+document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+});
+</script>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+</body>
+</html>
+
+<!-- JavaScript for Active Link Highlighting -->
+<script>
+// Function to add 'active' class to the current section's link
+window.addEventListener('scroll', function() {
+    var sections = document.querySelectorAll('section');
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    sections.forEach(function(section) {
+        var sectionTop = section.offsetTop - 70; // Offset for fixed navbar
+        if (window.scrollY >= sectionTop) {
+            var id = section.getAttribute('id');
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === id) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
+</script>
+
+</body>
+
